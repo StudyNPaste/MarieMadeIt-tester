@@ -19,14 +19,14 @@ function App() {
             <input type="text" placeholder='Instagram Name...' className='input' id='insta-name' autoComplete='off'/>
           </div>
           <div className='info-input'>
+            <label htmlFor="">Your Instagram URL:</label>
+            <input type="text" placeholder='Instagram URL...' className='input' id='insta-url' autoComplete='off'/>
+          </div>
+          <div className='info-input'>
             <label htmlFor="">Email:</label>
             <input type="text" placeholder='Email Address...' className='input' id='email' autoComplete='off'/>
           </div>
           <div className='info-input'>
-            <label htmlFor="">Your Instagram URL:</label>
-            <input type="text" placeholder='Instagram URL...' className='input' id='insta-url' autoComplete='off'/>
-          </div>
-          <div>
             <label htmlFor="">Color:</label>
             <input type="text" placeholder='What color do you plan on using?...' className='input' id='item-color' autoComplete='off'/>
           </div>

@@ -33,16 +33,20 @@ body {
   box-shadow: 0 0 10px black;
 }
 .input {
-  width: 50%;
+  width: 60%;
   height: 40px;
   border-radius: 10px;
   border-color: rgb(180, 180, 180);
   margin: 10px;
   box-shadow: 0 0 3px rgb(180, 180, 180);
 }
-
-.info label {
-  width: 200px;
+.info-input {
+  display: flex;
+  justify-content: space-between;
+}
+.info-input label {
+  padding-left: 150px;
+  align-content: center;
 }
 .info button {
   width: 125px;
