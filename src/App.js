@@ -2,10 +2,22 @@ import './App.css';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import logo from './Components/Assets/logo.PNG'
+//import Swal from 'sweetalert2'
 
 function App() {
+  /*const confirmSubmit = () => {
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "Application submitted!",
+      showConfirmButton: false,
+      timer: 1500
+    });
+  }*/
+
   const form = useRef();
 
+  //sending emails to gmail with emailjs
   function sendEmail(e) {
     e.preventDefault();
 
@@ -18,6 +30,7 @@ function App() {
       .then(
         () => {
           console.log('SUCCESS!');
+          alert('Application submitted.')
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -45,7 +58,7 @@ function App() {
           <div className='error-txt'>Instagram name can't be blank.</div>
           <div className='info-input'>
             <label htmlFor="">Your Instagram URL:</label>
-            <input type="text" name='url' placeholder='Instagram URL...' className='input' id='insta-url' autoComplete='off'required/>
+            <input type="text" name='url' placeholder='Instagram URL...' className='input' id='insta-url' autoComplete='off' required/>
           </div>
           <div className='error-txt'>Instagram URL can't be blank.</div>
           <div className='info-input'>
