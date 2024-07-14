@@ -69,3 +69,59 @@ body {
   margin-left: auto;
   display: none;
 }
+@media (max-width: 1500px) {
+  .info-input label{
+    padding-left: 75px;
+  }
+}
+@media (max-width: 1180px) {
+  .info-input label{
+    padding-left: 0px;
+  }
+}
+@media (max-width: 840px) {
+  .info-input label{
+    font-size: 16px;
+  }
+  .info{
+    padding: 50px 15px;
+    width: 80%;
+  }
+}
+@media (max-width:600px) {
+  .navbar{
+    padding: 10px 20px;
+    height: 110px;
+  }
+  #logo {
+    width: 80px;
+    height: 80px;
+    margin: auto 0;
+  }
+  .title{
+    margin-top: 40px;
+  }
+  .title h1 {
+    font-size: 30px;
+  }
+  .title h3 {
+    font-size: 18px;
+  }
+  .info{
+    padding: 20px 10px;
+    width: 90%;
+  }
+  .input {
+    width: 50%;
+  }
+}
+@media (max-width:405px) {
+  .navbar{
+    font-size: 20px;
+    padding: 10px 1px;
+  }
+  .info-input label{
+    font-size: 13px;
+  }
+}
+
